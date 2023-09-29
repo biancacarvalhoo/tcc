@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=David+Libre:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-image: url(./entrar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.login {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+
+}
+
+
+
+.left-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.left-button button {
+    height: 40px;
+    width: 130px;
+    border: none;
+    background-color: #D67E3E;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    font-family: 'David Libre', serif;
+}
+
+.left-button button:hover {
+    background-color: #9e5a2a;
+    color: #f2f2f2;
+    transition: all .5s;
+}
+
+.left-button button img {
+    height: 20px;
+    width: 30px;
+}
+
+.left {
+    flex: 1;
+    background: rgba(82, 131, 181, 0.89);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 0 0 30px;
+}
+
+.left-content h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Alegreya SC', serif;
+    font-weight: 800;
+}
+
+.left-content p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.70);
+    margin-top: 1rem;
+    font-family: 'David Libre', serif;
+}
+
+.right-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.right-button button {
+    height: 40px;
+    width: 135px;
+    border: none;
+    background-color: #D67E3E;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    font-family: 'David Libre', serif;
+}
+
+.right-button button:hover {
+    background-color: #9e5a2a;
+    color: #f2f2f2;
+    transition: all .5s;
+}
+
+
+.right {
+    flex: 1.5;
+    height: 100%;
+    background: rgba(82, 131, 181, 0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 30px 30px 0;
+    position: relative;
+}
+
+.login-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400;
+}
+
+.login-access input {
+    height: 55px;
+    width: 25rem;
+    border: solid 2px #fff;
+    background-color: transparent;
+    border-radius: 30px;
+    position: relative;
+}
+
+.usuario-img img {
+    height: 35px;
+    width: 40px;
+
+}
+
+.usuario-img {
+    position: absolute;
+    left: 0;
+    margin-left: 7rem;
+    margin-top: .41rem;
+}
+
+.senha-img img {
+    height: 40px;
+    width: 40px;
+}
+
+.img-fixed {
+    position: fixed;
+}
+
+.senha-img {
+    position: absolute;
+    left: 0;
+    margin-left: 7rem;
+    margin-top: 5.28rem;
+}
+
+.login-access input::placeholder {
+    padding-left: 3.5rem;
+    color: #fff;
+    font-family: 'David Libre', serif;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.right-content button {
+    height: 40px;
+    width: 135px;
+    border: none;
+    background-color: #D67E3E;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    font-family: 'Alegreya SC', serif;
+
+}
+
+.right-content button:hover {
+    background-color: #9e5a2a;
+    color: #f2f2f2;
+    transition: all .5s;
+
+}
+
+/*responsividade*/
+
+@media (max-width: 785px) {
+    .login {
+        position: relative;
+        width: 1000vh;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7rem;
+    }
+
+
+
+    body {
+        background: none;
+        position: relative;
+        background-image: url(./entrar_mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .left {
+        background: rgba(82, 131, 181, 0.60);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px 30px 0 0;
+        width: 90%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .left-button {
+        position: fixed;
+    }
+
+    .left-content p {
+        display: none;
+    }
+
+    .right {
+        background: rgba(82, 131, 181, 0.60);
+        border-radius: 0 0 30px 30px;
+        position: static;
+        z-index: 2;
+        padding-bottom: 10rem;
+        width: 90%;
+
+    }
+
+    .right-content h1 {
+        font-size: 3rem;
+    }
+
+    .right-button {
+        margin-right: 3rem;
+    }
+
+    .right-content button {
+        margin-top: 2rem;
+        height: 45px;
+        width: 160px;
+        font-size: 2rem;
+    }
+
+    .usuario-img {
+        margin-left: 3.5rem;
+        margin-top: .41rem;
+        z-index: 1;
+    }
+
+    .senha-img {
+        margin-left: 3.5rem;
+        margin-top: 5.28rem;
+        z-index: 1;
+    }
+
+    input {
+        z-index: 2;
+    }
+
+}
